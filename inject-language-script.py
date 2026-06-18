@@ -2,11 +2,11 @@
 """Inject language-switcher.js script tag into all HTML files in _site/"""
 import os
 import sys
+import re
 
 def inject_script():
     site_dir = '_site'
-    script_tag = '<script src="/assets/js/language-switcher.js"></script>\n'
-    head_tag = '</head>'
+    script_tag = '  <script src="/assets/js/language-switcher.js"></script>\n'
     
     count = 0
     for root, dirs, files in os.walk(site_dir):
@@ -17,12 +17,29 @@ def inject_script():
                     with open(path, 'r', encoding='utf-8') as fp:
                         content = fp.read()
                     
-                    if script_tag.strip() not in content and head_tag in content:
-                        content = content.replace(head_tag, script_tag + head_tag, 1)
-                        with open(path, 'w', encoding='utf-8') as fp:
-                            fp.write(content)
-                        count += 1
-                        print(f'Injected: {path}')
+                    # Only inject if not already present
+                    if 'language-switcher.js' in content:
+                        continue
+                    
+                    # Try to inject before </body>
+                    body_patterns = [r'</body>', r'</body\s*>', r'</BODY>']
+                    injected = False
+                    
+                    for pattern in body_patterns:
+                        if re.search(pattern, content):
+                            content = re.sub(pattern, script_tag + r'</body>', content, count=1)
+                            injected = True
+                            break
+                    
+                    if not injected:
+                        # Fallback: append to end of file
+                        content += '\n' + script_tag
+                    
+                    with open(path, 'w', encoding='utf-8') as fp:
+                        fp.write(content)
+                    
+                    count += 1
+                    print(f'Injected: {path}')
                 except Exception as e:
                     print(f'Error processing {path}: {e}', file=sys.stderr)
     
