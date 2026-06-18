@@ -55,3 +55,6 @@ Feel free to reach out if you'd like to collaborate or discuss any of these topi
 
 <!-- Language switcher -->
 <script src="/assets/js/language-switcher.js"></script>
+
+<!-- Language switcher -->
+<script src="/assets/js/language-switcher.js"></script>

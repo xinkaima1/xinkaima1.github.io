@@ -193,3 +193,6 @@ pagination:
 {% endif %}
 
 </div>
+
+<!-- Language switcher -->
+<script src="/assets/js/language-switcher.js"></script>
