@@ -5,7 +5,7 @@ permalink: /projects/
 description: 个人科研与竞赛项目合集
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [work]
 horizontal: false
 ---
 
