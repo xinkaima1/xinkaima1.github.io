@@ -25,10 +25,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-<p style="text-align:right; margin-bottom:1rem;">
-  <a href="/about-zh/" style="padding:8px 16px; background:#2c3e50; color:white; border-radius:20px; text-decoration:none; font-size:14px;">🇨🇳 中文版</a>
-</p>
-
 ## About Me
 
 Hello! I'm **Xinkai Ma (马鑫凯)**, an undergraduate student at **Jilin University**.
@@ -52,9 +48,3 @@ These projects allow me to apply engineering knowledge to solve real-world robot
 - ⚡ Embedded Systems & Control
 
 Feel free to reach out if you'd like to collaborate or discuss any of these topics!
-
-<!-- Language switcher -->
-<script src="/assets/js/language-switcher.js"></script>
-
-<!-- Language switcher -->
-<script src="/assets/js/language-switcher.js"></script>

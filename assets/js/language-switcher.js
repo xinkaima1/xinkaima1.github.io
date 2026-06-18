@@ -1,41 +1,56 @@
-// Language switcher - floating button
-// This file creates a floating language toggle button
+// Language switcher — single floating button
+// URL mapping: English / <-> Chinese /about-zh/
+(function () {
+  'use strict';
 
-(function() {
-  // Create button
-  var btn = document.createElement('div');
-  btn.id = 'lang-btn';
-  btn.style.cssText = 'position:fixed;top:60px;right:20px;z-index:99999;background:#fff;color:#333;padding:10px 18px;border-radius:25px;box-shadow:0 4px 20px rgba(0,0,0,0.25);cursor:pointer;font-size:15px;font-weight:600;transition:all 0.3s;border:2px solid #4a9eff;user-select:none;';
-  
-  // Set text based on current path
-  var isZh = window.location.pathname.includes('/about-zh/') || window.location.pathname.includes('/zh/');
-  btn.innerHTML = isZh ? '🇺🇸 EN' : '🇨🇳 中文';
-  btn.title = isZh ? 'Switch to English' : 'Switch to Chinese';
-  
-  // Click handler
-  btn.onclick = function() {
-    var path = window.location.pathname;
-    if (path.includes('/about-zh/')) {
-      window.location.href = '/about/';
-    } else if (path.includes('/about/')) {
-      window.location.href = '/about-zh/';
-    } else if (path.includes('/zh/')) {
-      window.location.href = path.replace('/zh/', '/');
-    } else {
-      window.location.href = '/zh' + (path === '/' ? '/' : path);
+  var PATH = window.location.pathname;
+
+  // Determine current language and compute target URL
+  function getState() {
+    // Chinese page
+    if (PATH === '/about-zh/' || PATH.indexOf('/about-zh') === 0) {
+      return { lang: 'zh', target: '/', label: '\uD83C\uDDFA\uD83C\uDDF8 EN', title: 'Switch to English' };
     }
-  };
-  
-  // Hover effects
-  btn.onmouseover = function() { this.style.boxShadow = '0 6px 25px rgba(0,0,0,0.35)'; };
-  btn.onmouseout = function() { this.style.boxShadow = '0 4px 20px rgba(0,0,0,0.25)'; };
-  
-  // Add to page
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() {
-      document.body.appendChild(btn);
-    });
-  } else {
+    // English page (including homepage /)
+    return { lang: 'en', target: '/about-zh/', label: '\uD83C\uDDE8\uD83C\uDDF3 \u4E2D\u6587', title: '\u5207\u6362\u4E3A\u4E2D\u6587' };
+  }
+
+  var state = getState();
+
+  // Create ONE button
+  var btn = document.createElement('a');
+  btn.id = 'lang-switcher-btn';
+  btn.href = state.target;
+  btn.textContent = state.label;
+  btn.title = state.title;
+  btn.style.cssText =
+    'position:fixed;top:70px;right:24px;z-index:99999;' +
+    'background:#ffffff;color:#333333;padding:8px 18px;' +
+    'border-radius:20px;box-shadow:0 2px 12px rgba(0,0,0,0.18);' +
+    'cursor:pointer;font-size:14px;font-weight:600;' +
+    'text-decoration:none;border:1px solid #d0d7de;' +
+    'transition:transform 0.2s,box-shadow 0.2s;' +
+    'font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;' +
+    'user-select:none;display:inline-block;line-height:1.6;';
+
+  btn.addEventListener('mouseenter', function () {
+    btn.style.transform = 'translateY(-1px)';
+    btn.style.boxShadow = '0 4px 16px rgba(0,0,0,0.25)';
+  });
+  btn.addEventListener('mouseleave', function () {
+    btn.style.transform = 'translateY(0)';
+    btn.style.boxShadow = '0 2px 12px rgba(0,0,0,0.18)';
+  });
+
+  // Prevent duplicate buttons (guard against double injection)
+  function appendOnce() {
+    if (document.getElementById('lang-switcher-btn')) return;
     document.body.appendChild(btn);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', appendOnce);
+  } else {
+    appendOnce();
   }
 })();
