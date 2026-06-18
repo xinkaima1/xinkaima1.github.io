@@ -1,96 +1,66 @@
 /**
- * Language Switcher for al-folio
- * Simple version: toggles between EN and 中文 versions
+ * Language Switcher - Floating Button
+ * Adds a floating language switcher button to the page
  */
-
 (function () {
   'use strict';
 
-  // Map of English pages to their Chinese versions
+  // Only run on pages that have English/Chinese versions
   const pageMap = {
     '/': '/about-zh/',
     '/about/': '/about-zh/',
-    '/projects/': null, // No Chinese version yet
-    '/publications/': null,
+    '/about-zh/': '/',
   };
-
-  const reverseMap = {};
-  for (const [en, zh] of Object.entries(pageMap)) {
-    if (zh) reverseMap[zh] = en;
-  }
 
   function getCurrentLang() {
     const path = window.location.pathname;
-    if (path.includes('-zh/') || path.includes('/zh/')) {
-      return 'zh';
-    }
+    if (path.includes('-zh/') || path.includes('/zh/')) return 'zh';
     return 'en';
   }
 
-  function getTargetUrl() {
-    const path = window.location.pathname;
-    const lang = getCurrentLang();
-
-    if (lang === 'en') {
-      // Going to Chinese
-      if (pageMap[path]) {
-        return pageMap[path];
-      }
-      // Default: go to Chinese About page
-      return '/about-zh/';
-    } else {
-      // Going to English
-      if (reverseMap[path]) {
-        return reverseMap[path];
-      }
-      // Default: go to homepage
-      return '/';
-    }
-  }
-
-  function createSwitcher() {
-    const navbar = document.querySelector('.navbar-nav');
-    if (!navbar) return false;
-
+  function createFloatingButton() {
     // Check if button already exists
-    if (document.getElementById('lang-switcher')) return true;
+    if (document.getElementById('lang-float-btn')) return;
 
-    const li = document.createElement('li');
-    li.className = 'nav-item';
+    const btn = document.createElement('button');
+    btn.id = 'lang-float-btn';
+    btn.innerHTML = getCurrentLang() === 'en' ? '🇨🇳 中文' : '🇬🇧 EN';
+    btn.title = getCurrentLang() === 'en' ? 'Switch to Chinese' : '切换到英文';
+    btn.style.cssText = `
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      z-index: 9999;
+      padding: 10px 16px;
+      background: var(--global-theme-color, #2c3e50);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      transition: all 0.3s;
+    `;
 
-    const btn = document.createElement('a');
-    btn.id = 'lang-switcher';
-    btn.className = 'nav-link';
-    btn.href = getTargetUrl();
-    
-    const lang = getCurrentLang();
-    if (lang === 'en') {
-      btn.innerHTML = '🇨🇳 中文';
-      btn.title = '切换到中文';
-    } else {
-      btn.innerHTML = '🇬🇧 EN';
-      btn.title = 'Switch to English';
-    }
+    btn.onmouseover = function () {
+      this.style.transform = 'scale(1.05)';
+    };
+    btn.onmouseout = function () {
+      this.style.transform = 'scale(1)';
+    };
 
-    li.appendChild(btn);
+    btn.onclick = function () {
+      const target = pageMap[window.location.pathname] || '/about-zh/';
+      window.location.href = target;
+    };
 
-    // Insert before the theme toggle (if exists) or at the end
-    const themeToggle = navbar.querySelector('.theme-toggle, .nav-item:last-child');
-    if (themeToggle && themeToggle.parentElement === navbar) {
-      navbar.insertBefore(li, themeToggle);
-    } else {
-      navbar.appendChild(li);
-    }
-
-    return true;
+    document.body.appendChild(btn);
   }
 
   // Initialize
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      createSwitcher();
-    });
+    document.addEventListener('DOMContentLoaded', createFloatingButton);
   } else {
-    createSwitcher();
+    createFloatingButton();
   }
 })();
