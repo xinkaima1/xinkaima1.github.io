@@ -52,3 +52,6 @@ These projects allow me to apply engineering knowledge to solve real-world robot
 - ⚡ Embedded Systems & Control
 
 Feel free to reach out if you'd like to collaborate or discuss any of these topics!
+
+<!-- Language switcher -->
+<script src="/assets/js/language-switcher.js"></script>

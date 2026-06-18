@@ -1,66 +1,60 @@
-/**
- * Language Switcher - Floating Button
- * Adds a floating language switcher button to the page
- */
-(function () {
+// Language switcher for al-folio
+// Injects a language toggle button next to the theme toggle button
+
+(function() {
   'use strict';
 
-  // Only run on pages that have English/Chinese versions
-  const pageMap = {
-    '/': '/about-zh/',
-    '/about/': '/about-zh/',
-    '/about-zh/': '/',
-  };
+  function injectButton() {
+    // Find the toggle-container li (contains theme toggle)
+    var toggleContainer = document.querySelector('.toggle-container');
+    if (!toggleContainer) {
+      // Try again later
+      setTimeout(injectButton, 200);
+      return;
+    }
 
-  function getCurrentLang() {
-    const path = window.location.pathname;
-    if (path.includes('-zh/') || path.includes('/zh/')) return 'zh';
-    return 'en';
-  }
-
-  function createFloatingButton() {
     // Check if button already exists
-    if (document.getElementById('lang-float-btn')) return;
+    if (document.getElementById('lang-toggle-li')) {
+      return;
+    }
 
-    const btn = document.createElement('button');
-    btn.id = 'lang-float-btn';
-    btn.innerHTML = getCurrentLang() === 'en' ? '🇨🇳 中文' : '🇬🇧 EN';
-    btn.title = getCurrentLang() === 'en' ? 'Switch to Chinese' : '切换到英文';
-    btn.style.cssText = `
-      position: fixed;
-      bottom: 80px;
-      right: 20px;
-      z-index: 9999;
-      padding: 10px 16px;
-      background: var(--global-theme-color, #2c3e50);
-      color: white;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 14px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-      transition: all 0.3s;
-    `;
+    // Create new li element
+    var li = document.createElement('li');
+    li.id = 'lang-toggle-li';
+    li.className = 'nav-item';
 
-    btn.onmouseover = function () {
-      this.style.transform = 'scale(1.05)';
-    };
-    btn.onmouseout = function () {
-      this.style.transform = 'scale(1)';
-    };
+    // Create button
+    var btn = document.createElement('button');
+    btn.id = 'lang-toggle-btn';
+    btn.type = 'button';
+    btn.title = 'Switch language';
+    btn.style.cssText = 'background:none; border:none; cursor:pointer; padding:8px 12px; font-size:14px;';
+    btn.innerHTML = '🇨🇳 中';
 
-    btn.onclick = function () {
-      const target = pageMap[window.location.pathname] || '/about-zh/';
-      window.location.href = target;
-    };
+    // Click handler
+    btn.addEventListener('click', function() {
+      var path = window.location.pathname;
+      if (path.includes('/about-zh/')) {
+        window.location.href = '/about/';
+      } else if (path.includes('/about/')) {
+        window.location.href = '/about-zh/';
+      } else if (path.includes('/zh/')) {
+        window.location.href = path.replace('/zh/', '/');
+      } else {
+        window.location.href = '/zh' + (path === '/' ? '/' : path);
+      }
+    });
 
-    document.body.appendChild(btn);
+    li.appendChild(btn);
+
+    // Insert before toggle-container
+    toggleContainer.parentNode.insertBefore(li, toggleContainer);
   }
 
-  // Initialize
+  // Run on DOM ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', createFloatingButton);
+    document.addEventListener('DOMContentLoaded', injectButton);
   } else {
-    createFloatingButton();
+    injectButton();
   }
 })();
