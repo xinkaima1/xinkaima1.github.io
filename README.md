@@ -47,9 +47,6 @@
 - ✅ 删除 `fun` 业余项目分类，仅保留 `work` 学术/竞赛项目
 - ✅ 修复项目不展示问题（al-folio 使用 `category` 字段过滤）
 - ✅ 修改项目页面标题与简介文案
-- ✅ 新增 2 份 CRAIC 机器人竞赛项目文档：
-  - `_projects/1_craic_lunar.md` - 月球探测项目
-  - `_projects/2_craic_simuro.md` - Simuro 足球项目
 
 ### 4. 导航栏优化
 - ✅ 精简导航栏入口，移除无用菜单项
@@ -60,8 +57,7 @@
 - ✅ 配置 CV 数据结构（`_data/cv.yml`）
 - ✅ 清空模板示例数据，预留个人简历填写规范
 
-### 6. GitHub 仓库配置
-- ✅ 用户名修改为 `xinkaima1`，修复 GitHub Pages 404 访问故障
+### 6. GitHub 仓库配置 
 - ✅ 完善仓库简介（Description）
 - ✅ 规范仓库 Topic 标签
 - ✅ 保留原 MIT 开源协议
