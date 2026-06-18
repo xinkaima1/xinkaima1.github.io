@@ -1,7 +1,7 @@
 # 马鑫凯 | Xinkai Ma
 ## 个人学术主页 | Personal Academic Homepage
 **吉林大学 生物与农业工程学院 本科生**
-🏠 学术主页访问地址：https://northshushu.github.io
+🏠 学术主页访问地址：https://xinkaima1.github.io
 
 ### 个人简介
 我目前就读于吉林大学生物与农业工程学院，本科阶段曾在生命科学学院完成前期学业，具备生物学与工程交叉学科背景。
