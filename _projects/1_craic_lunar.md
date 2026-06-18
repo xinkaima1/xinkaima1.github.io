@@ -4,9 +4,8 @@ title: CRAIC Lunar Exploration
 description: Autonomous lunar rover navigation and exploration system
 img:
 importance: 1
-category: Robotics Competition
+category: work
 related_publications: false
-group: work
 ---
 
 ## CRAIC Lunar Exploration Project

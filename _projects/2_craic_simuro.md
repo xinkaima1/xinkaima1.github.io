@@ -4,9 +4,8 @@ title: CRAIC Simuro Football
 description: AI strategies for simulated robot soccer competitions
 img:
 importance: 2
-category: Robotics Competition
+category: work
 related_publications: false
-group: work
 ---
 
 ## CRAIC Simuro Football Project
