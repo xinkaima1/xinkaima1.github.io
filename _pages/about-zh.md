@@ -1,8 +1,8 @@
 ---
 layout: about
-title: 关于我
+title: about-zh
 permalink: /about-zh/
-subtitle: <a href='https://www.jlu.edu.cn/'>吉林大学</a>. 中国长春.
+subtitle: <a href='https://www.jlu.edu.cn/'>吉林大学</a>. 长春, 中国.
 
 profile:
   align: right
@@ -11,38 +11,65 @@ profile:
   more_info: >
     <p>生物与农业工程学院</p>
     <p>吉林大学</p>
-    <p>中国吉林长春</p>
+    <p>中国, 吉林, 长春</p>
 
 selected_papers: false
 social: true
 announcements:
   enabled: true
   scrollable: true
-  limit: 5
-latest_posts:
-  enabled: false
 ---
 
-## 个人简介
+## 关于我
 
-你好！我是**马鑫凯（Xinkai Ma）**，吉林大学本科生。
+你好！我是**马鑫凯 (Xinkai Ma)**，吉林大学**生物与农业工程学院**的本科生。
 
-我目前就读于**生物与农业工程学院**（2023-2026），此前在生命科学学院学习（2022-2023）。我的学术历程赋予了我独特的跨学科视角，将生物学与工程原理相结合。
+我的研究方向聚焦于**人工智能与航天技术**的交叉领域，特别是：
+- 🌙 **空间探索技术**（月球/火星探测导航、任务规划）
+- 🤖 **智能机器人系统**（Simuro 足球机器人、多智能体协作）
+- 🧠 **机器学习与计算机视觉**（目标检测、路径规划）
 
-## 研究与项目
+<!-- Language switcher -->
+<script src="/assets/js/language-switcher.js"></script>
 
-我热衷于机器人技术和AI竞赛，积极参与**CRAIC（中国机器人人工智能大赛）**项目：
+## 教育背景
 
-- **🌙 月球探测项目** - 为月球探测机器人开发自主导航与探索系统
-- **⚽ Simuro足球项目** - 为模拟机器人足球比赛构建AI策略
+**吉林大学** — 生物与农业工程学院（本科）
+- 📍 地点：中国, 吉林, 长春
+- 📅 时间：2022 — 至今
+- 🏆 荣誉：CRAIC 竞赛团队核心成员
 
-这些项目让我能够将工程知识应用于解决实际机器人挑战，从路径规划到决策算法。
+## 研究方向
 
-## 兴趣方向
+### 🌙 空间探索技术
+参与 **CRAIC Lunar Exploration** 项目，研究月球探测任务的：
+- 自主导航算法
+- 任务规划与决策系统
+- 多传感器数据融合
 
-- 🤖 机器人与自主系统
-- 🧠 人工智能与机器学习
-- 🚀 太空探索技术
-- ⚡ 嵌入式系统与控制
+### ⚽ CRAIC Simuro 足球机器人
+参与 **CRAIC Simuro Football** 项目，开发：
+- 多智能体协作策略
+- 实时路径规划算法
+- 机器人视觉感知系统
 
-如果你有合作意向或想讨论上述任何话题，欢迎随时联系我！
+## 技能与工具
+
+**编程语言**：Python, C++, MATLAB, JavaScript  
+**AI 框架**：PyTorch, TensorFlow, ROS  
+**工具**：Linux, Git, Docker, LaTeX  
+
+## 竞赛与项目
+
+- 🥇 **CRAIC Lunar Exploration** — 月球探测任务仿真（2024 — 至今）
+- ⚽ **CRAIC Simuro Football** — 机器人足球 AI 策略（2023 — 至今）
+
+## 联系方式
+
+📧 **邮箱**：ma@xinkaima.me  
+🔗 **GitHub**：[xinkaima1](https://github.com/xinkaima1)  
+🔗 **学术主页**：[xinkaima1.github.io](https://xinkaima1.github.io)  
+
+---
+
+欢迎联系我讨论研究合作、项目想法或任何有趣的话题！ 🚀
