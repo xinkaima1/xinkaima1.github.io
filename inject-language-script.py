@@ -5,8 +5,8 @@ import sys
 
 def inject_script():
     site_dir = '_site'
-    script_tag = '<script src="/assets/js/language-switcher.js"></script>\n'
-    head_tag = '</head>'
+    script_tag = '  <script src="/assets/js/language-switcher.js"></script>\n'
+    target_tag = '</body>'
     
     count = 0
     for root, dirs, files in os.walk(site_dir):
@@ -17,8 +17,9 @@ def inject_script():
                     with open(path, 'r', encoding='utf-8') as fp:
                         content = fp.read()
                     
-                    if script_tag.strip() not in content and head_tag in content:
-                        content = content.replace(head_tag, script_tag + head_tag, 1)
+                    # Only inject if not already present
+                    if script_tag.strip() not in content and target_tag in content:
+                        content = content.replace(target_tag, script_tag + target_tag, 1)
                         with open(path, 'w', encoding='utf-8') as fp:
                             fp.write(content)
                         count += 1
