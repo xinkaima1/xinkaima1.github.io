@@ -2,12 +2,16 @@
 /* Fix link color in about page */
 
 /* Make all links in post content blue */
-.post a {
-  color: #2c6fbb;
+.post a,
+article a,
+.clearfix a {
+  color: #2c6fbb !important;
   text-decoration: none;
 }
 
-.post a:hover {
-  color: #1a4d8f;
+.post a:hover,
+article a:hover,
+.clearfix a:hover {
+  color: #1a4d8f !important;
   text-decoration: underline;
 }
