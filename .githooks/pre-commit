@@ -1,0 +1,14 @@
+#!/bin/sh
+# Pre-commit hook: auto-generate about.md and about-zh.md from about.src.md
+# If about.src.md was modified, run split_lang.py before commit
+
+if git diff --cached --name-only | grep -q "_pages/about.src.md"; then
+    echo "Detected changes in about.src.md, running split_lang.py..."
+    python -X utf8 split_lang.py
+    if [ $? -ne 0 ]; then
+        echo "Error running split_lang.py"
+        exit 1
+    fi
+    git add _pages/about.md _pages/about-zh.md
+    echo "Auto-generated about.md and about-zh.md"
+fi

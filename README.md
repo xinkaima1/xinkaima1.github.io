@@ -64,6 +64,12 @@
 - ✅ 保留 3 个核心工作流（deploy、update-tocs、broken-links-site）
 - ✅ 新增 `split_lang.py` 自动执行步骤
 
+### 8. Pre-commit Hook 自动化
+- ✅ 新增 `.githooks/pre-commit` 脚本
+- ✅ 自动检测 `about.src.md` 变更并运行 `split_lang.py`
+- ✅ 自动将生成的 `about.md` 和 `about-zh.md` 加入 commit
+- ✅ 配置 `git config core.hooksPath .githooks`
+
 ---
 
 ## 👤 个人简介
@@ -117,11 +123,28 @@ bundle exec jekyll serve
 
 ### 自动部署流程
 
-1. 修改代码后提交并推送到 `main` 分支
+#### 本地提交自动化（Pre-commit Hook）
+
+配置 pre-commit hook 后，每次修改 `about.src.md` 并 `git commit` 时：
+1. Hook 自动检测 `about.src.md` 变更
+2. 自动运行 `split_lang.py` 生成 `about.md` 和 `about-zh.md`
+3. 自动将生成文件加入 commit
+4. 提交完成
+
+#### 线上部署（GitHub Actions）
+
+1. `git push` 到 `main` 分支
 2. GitHub Actions 自动运行 `deploy.yml` 工作流
 3. 工作流执行 `split_lang.py` 生成中英文页面
 4. Jekyll 构建静态站点
 5. 部署到 `gh-pages` 分支，约 **3~5 分钟**后生效
+
+#### 初始化 Hook（首次 clone 后需要运行）
+
+```bash
+cd xinkaima1.github.io
+git config core.hooksPath .githooks
+```
 
 ---
 
@@ -155,12 +178,18 @@ xinkaima1.github.io/
 详细的仓库维护教程请参考：**`维护主页教程.md`**
 
 教程涵盖：
-- 修改首页 About 内容
+- 修改首页 About 内容（**只需编辑 `about.src.md`**，其余自动生成）
 - 添加/修改项目经历
 - CV 在线简历维护
 - 导航栏菜单配置
 - 本地修改与部署流程
 - 常见问题排查
+
+### ⚠️ 重要：关于 `about.src.md` 和 `about.md`
+
+- **`about.src.md`**：唯一的源文件，所有 About 页面内容都在这里维护
+- **`about.md`** 和 **`about-zh.md`**：由 `split_lang.py` 自动生成，**不要手动修改**
+- 修改源文件后，运行 `python -X utf8 split_lang.py` 重新生成（或依赖 pre-commit hook 自动执行）
 
 ---
 
