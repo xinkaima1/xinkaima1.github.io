@@ -5,8 +5,8 @@
 [EN] I am advised by **[Prof. Yu Li (李玉)](https://sai.jlu.edu.cn/info/1094/4591.htm)**, Assistant Professor at the School of Artificial Intelligence.
 [ZH] 导师为**[李玉](https://sai.jlu.edu.cn/info/1094/4591.htm)**助理教授（博士生导师）。
 
-[EN] I completed my B.Eng. in **Agricultural Mechanization and Automation** at Jilin University (2022.09 – 2027.06).
-[ZH] 本科就读于吉林大学**农业机械化及其自动化**专业（2022.09 – 2027.06）。
+[EN] I studied at the **College of Life Sciences, Jilin University** (2022 – 2023) and the **College of Biological and Agricultural Engineering** (2023 – 2027), completing my B.Eng. in **Agricultural Mechanization and Automation**.
+[ZH] 本科就读于吉林大学：**2022 – 2023** 生命科学学院，**2023 – 2027** 生物与农业工程学院（农业机械化及其自动化专业）。
 
 ## Research Interests
 [EN] - **My own exploration:** audio understanding, audio generation, intelligent speech interaction, and large models.
