@@ -3,6 +3,7 @@ layout: page
 title: CRAIC Lunar Exploration · National First Prize
 description: "National First Prize (2026) · SLAM & autonomous navigation"
 img:
+date: 2026-07-01
 importance: 1
 category: work
 related_publications: false
@@ -10,7 +11,9 @@ related_publications: false
 
 ## CRAIC Lunar Exploration Challenge — National First Prize (2026)
 
-In **July 2026**, our team won the **National First Prize** in the **Lunar Exploration Challenge (挑战赛·月球探索赛项)** of the **China Robot and Artificial Intelligence Competition (CRAIC)**.
+**Period:** January 2026 – July 2026 · **Team:** three members, I was the team leader.
+
+In **July 2026**, our three-person team won the **National First Prize** in the **Lunar Exploration Challenge (挑战赛·月球探索赛项)** of the **China Robot and Artificial Intelligence Competition (CRAIC)**.
 
 ### My Role
 
