@@ -30,7 +30,7 @@ latest_posts:
 
  I am advised by **[Prof. Yu Li (李玉)](https://sai.jlu.edu.cn/info/1094/4591.htm)**, Assistant Professor at the School of Artificial Intelligence.
 
- I completed my B.Eng. in **Agricultural Mechanization and Automation** at Jilin University (2022.09 – 2027.06).
+ I studied at the **College of Life Sciences, Jilin University** (2022 – 2023) and the **College of Biological and Agricultural Engineering** (2023 – 2027), completing my B.Eng. in **Agricultural Mechanization and Automation**.
 
 ## Research Interests
  - **My own exploration:** audio understanding, audio generation, intelligent speech interaction, and large models.
