@@ -1,6 +1,6 @@
 ## About Me
 [EN] I'm **Xinkai Ma (马鑫凯)**. I will join the **School of Artificial Intelligence, Jilin University** as a Master's student in **Computer Science and Technology** in **September 2027**.
-[ZH] 我是**马鑫凯 (Xinkai Ma)**，吉林大学**人工智能学院** **计算机科学与技术**专业硕士研究生（研0），**2027 年 9 月**入学。
+[ZH] 我是**马鑫凯 (Xinkai Ma)**，吉林大学**人工智能学院** **计算机科学与技术**专业硕士研究生，将于 **2027 年 9 月**入学。
 
 [EN] I am advised by **[Prof. Yu Li (李玉)](https://sai.jlu.edu.cn/info/1094/4591.htm)**, Assistant Professor at the School of Artificial Intelligence.
 [ZH] 导师为**[李玉](https://sai.jlu.edu.cn/info/1094/4591.htm)**助理教授（博士生导师）。
