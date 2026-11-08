@@ -61,7 +61,7 @@ profile:
   image_circular: false
   more_info: >
     <p>吉林大学 人工智能学院</p>
-    <p>推免硕士生（研0）· 2027 年 9 月入学</p>
+    <p>硕士研究生（研0）· 2027 年 9 月入学</p>
     <p>中国, 吉林, 长春</p>
 
 selected_papers: false
