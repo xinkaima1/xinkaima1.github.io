@@ -20,7 +20,6 @@ cv:
         start_date: 2027-09
         end_date: present
         highlights:
-          - "Admitted through the recommendation program (推免); starting September 2027."
           - "Adviser: Prof. Yu Li (李玉). Group focus: multimodal large models, generative recommendation, graph learning."
 
       - institution: Jilin University, College of Biological and Agricultural Engineering
@@ -30,7 +29,6 @@ cv:
         start_date: 2022-09
         end_date: 2027-06
         highlights:
-          - "Five-year program: entered the College of Life Sciences in 2022, transferred with a one-year repetition in the second year."
           - "Hands-on background in robotics, control systems and engineering practice."
 
     Awards:

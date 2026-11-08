@@ -1,12 +1,12 @@
 ## About Me
-[EN] I'm **Xinkai Ma (马鑫凯)**, an incoming Master's student (研0) in **Computer Science and Technology** at the **School of Artificial Intelligence, Jilin University**. I was admitted through the recommendation program (推免) and will start my M.Sc. in **September 2027**.
-[ZH] 我是**马鑫凯 (Xinkai Ma)**，已通过推免进入**吉林大学人工智能学院**，攻读**计算机科学与技术**专业硕士（研0），将于 **2027 年 9 月**入学。
+[EN] I'm **Xinkai Ma (马鑫凯)**. I will join the **School of Artificial Intelligence, Jilin University** as a Master's student in **Computer Science and Technology** in **September 2027**.
+[ZH] 我是**马鑫凯 (Xinkai Ma)**，吉林大学**人工智能学院** **计算机科学与技术**专业硕士研究生（研0），**2027 年 9 月**入学。
 
 [EN] I am advised by **[Prof. Yu Li (李玉)](https://sai.jlu.edu.cn/info/1094/4591.htm)**, Assistant Professor at the School of Artificial Intelligence.
 [ZH] 导师为**[李玉](https://sai.jlu.edu.cn/info/1094/4591.htm)**助理教授（博士生导师）。
 
-[EN] I completed my B.Eng. in **Agricultural Mechanization and Automation** at Jilin University (2022.09 – 2027.06, a five-year program after transferring from the College of Life Sciences with a one-year repetition). This background gave me hands-on experience with robotics, control, and real engineering systems.
-[ZH] 本科就读于吉林大学**农业机械化及其自动化**专业（2022.09 – 2027.06，五年制；2022 年入学于生命科学学院，大二降转并留级一年）。这段经历让我在机器人、控制系统与工程实践上积累了扎实的动手能力。
+[EN] I completed my B.Eng. in **Agricultural Mechanization and Automation** at Jilin University (2022.09 – 2027.06).
+[ZH] 本科就读于吉林大学**农业机械化及其自动化**专业（2022.09 – 2027.06）。
 
 ## Research Interests
 [EN] - **My own exploration:** audio understanding, audio generation, intelligent speech interaction, and large models.

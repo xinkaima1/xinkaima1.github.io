@@ -26,11 +26,11 @@ latest_posts:
 ---
 
 ## About Me
- I'm **Xinkai Ma (马鑫凯)**, an incoming Master's student (研0) in **Computer Science and Technology** at the **School of Artificial Intelligence, Jilin University**. I was admitted through the recommendation program (推免) and will start my M.Sc. in **September 2027**.
+ I'm **Xinkai Ma (马鑫凯)**. I will join the **School of Artificial Intelligence, Jilin University** as a Master's student in **Computer Science and Technology** in **September 2027**.
 
  I am advised by **[Prof. Yu Li (李玉)](https://sai.jlu.edu.cn/info/1094/4591.htm)**, Assistant Professor at the School of Artificial Intelligence.
 
- I completed my B.Eng. in **Agricultural Mechanization and Automation** at Jilin University (2022.09 – 2027.06, a five-year program after transferring from the College of Life Sciences with a one-year repetition). This background gave me hands-on experience with robotics, control, and real engineering systems.
+ I completed my B.Eng. in **Agricultural Mechanization and Automation** at Jilin University (2022.09 – 2027.06).
 
 ## Research Interests
  - **My own exploration:** audio understanding, audio generation, intelligent speech interaction, and large models.
