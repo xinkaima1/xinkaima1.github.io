@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: 个人科研与竞赛项目合集
+description: 科研竞赛与课程项目 / Research, competitions, and course projects
 nav: true
 nav_order: 3
 display_categories: [work]

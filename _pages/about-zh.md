@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>生物与农业工程学院</p>
-    <p>吉林大学</p>
+    <p>吉林大学 人工智能学院</p>
+    <p>推免硕士生（研0）· 2027 年 9 月入学</p>
     <p>中国, 吉林, 长春</p>
 
 selected_papers: false
@@ -26,23 +26,22 @@ latest_posts:
 ---
 
 ## About Me
- 你好！我是**马鑫凯 (Xinkai Ma)**，**吉林大学**的本科生。
+ 我是**马鑫凯 (Xinkai Ma)**，已通过推免进入**吉林大学人工智能学院**，攻读**计算机科学与技术**专业硕士（研0），将于 **2027 年 9 月**入学。
 
- 我就读于**生物与农业工程学院**（2023-2026），此前有生命科学背景（2022-2023）。我的学术经历让我拥有了独特的跨学科视角，将生物学与工程学原理融会贯通。
+ 导师为**[李玉](https://sai.jlu.edu.cn/info/1094/4591.htm)**助理教授（博士生导师）。
 
-## Research & Projects
- 我对机器人技术和人工智能竞赛充满热情。我积极参与 **CRAIC（中国机器人人工智能大赛）** 项目：
+ 本科就读于吉林大学**农业机械化及其自动化**专业（2022.09 – 2027.06，五年制；2022 年入学于生命科学学院，大二降转并留级一年）。这段经历让我在机器人、控制系统与工程实践上积累了扎实的动手能力。
 
- - <a href="/projects/1_craic_lunar/"><strong>🌙 月球探测项目</strong></a> — 为月球探测机器人开发自主导航与探测系统
+## Research Interests
+ - **个人探索方向：** 音频理解、音频生成、智能语音交互与大模型。
+ - **课题组方向：** 多模态大模型、生成式推荐、图学习。
 
- - <a href="/projects/2_craic_simuro/"><strong>⚽ Simuro 足球项目</strong></a> — 为仿真机器人足球竞赛构建 AI 策略
+## Honors
+ - **全国一等奖**，中国机器人及人工智能大赛 挑战赛·月球探索赛项，**2026 年 7 月**。担任队长，主要负责 SLAM 与自主导航。
 
- 这些项目使我能够将工程知识应用于解决真实世界的机器人挑战，从路径规划到决策算法。
+## Selected Projects
+ - [CRAIC 月球探索 · 全国一等奖](/projects/1_craic_lunar/) — SLAM、自主导航、ROS2
+ - [CNN 语音情感识别](https://github.com/xinkaima1/cnn-speech) — 课程作业；log-Mel + PyTorch CNN（RAVDESS）
+ - [xArm6 定点到达仿真](https://github.com/xinkaima1/xarm6-reach-lab) — 课程作业；PyBullet 逆运动学 + 轨迹跟踪
 
-## Interests
- - 🤖 机器人与自主系统
- - 🧠 人工智能与机器学习
- - 🚀 空间探索技术
- - ⚡ 嵌入式系统与控制
-
- 欢迎联系我，期待与你合作或探讨这些话题！
+ 欢迎通过邮件联系，交流音频智能相关的话题与合作。

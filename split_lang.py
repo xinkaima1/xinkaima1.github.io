@@ -31,8 +31,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>College of Biological and Agricultural Engineering</p>
-    <p>Jilin University</p>
+    <p>School of Artificial Intelligence</p>
+    <p>Jilin University · Incoming M.Sc. (Fall 2027)</p>
     <p>Changchun, Jilin, China</p>
 
 selected_papers: false
@@ -60,8 +60,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>生物与农业工程学院</p>
-    <p>吉林大学</p>
+    <p>吉林大学 人工智能学院</p>
+    <p>推免硕士生（研0）· 2027 年 9 月入学</p>
     <p>中国, 吉林, 长春</p>
 
 selected_papers: false
@@ -104,7 +104,7 @@ def split_body(src_path):
     return en_lines, zh_lines
 
 def write_output(path, front_matter, body_lines):
-    with open(path, 'w', encoding='utf-8') as f:
+    with open(path, 'w', encoding='utf-8', newline='\n') as f:
         f.write(front_matter)
         f.write('\n'.join(body_lines).strip())
         f.write('\n')

@@ -1,32 +1,30 @@
 ## About Me
-[EN] Hello! I'm **Xinkai Ma (马鑫凯)**, an undergraduate student at **Jilin University**.
-[ZH] 你好！我是**马鑫凯 (Xinkai Ma)**，**吉林大学**的本科生。
+[EN] I'm **Xinkai Ma (马鑫凯)**, an incoming Master's student (研0) in **Computer Science and Technology** at the **School of Artificial Intelligence, Jilin University**. I was admitted through the recommendation program (推免) and will start my M.Sc. in **September 2027**.
+[ZH] 我是**马鑫凯 (Xinkai Ma)**，已通过推免进入**吉林大学人工智能学院**，攻读**计算机科学与技术**专业硕士（研0），将于 **2027 年 9 月**入学。
 
-[EN] I'm currently studying in the **College of Biological and Agricultural Engineering** (2023-2026), with a background in Life Sciences (2022-2023). My academic journey has given me a unique interdisciplinary perspective, bridging biology with engineering principles.
-[ZH] 我就读于**生物与农业工程学院**（2023-2026），此前有生命科学背景（2022-2023）。我的学术经历让我拥有了独特的跨学科视角，将生物学与工程学原理融会贯通。
+[EN] I am advised by **[Prof. Yu Li (李玉)](https://sai.jlu.edu.cn/info/1094/4591.htm)**, Assistant Professor at the School of Artificial Intelligence.
+[ZH] 导师为**[李玉](https://sai.jlu.edu.cn/info/1094/4591.htm)**助理教授（博士生导师）。
 
-## Research & Projects
-[EN] I'm passionate about robotics and AI competitions. I'm actively involved in the **CRAIC (China Robot Artificial Intelligence Competition)** projects:
-[ZH] 我对机器人技术和人工智能竞赛充满热情。我积极参与 **CRAIC（中国机器人人工智能大赛）** 项目：
+[EN] I completed my B.Eng. in **Agricultural Mechanization and Automation** at Jilin University (2022.09 – 2027.06, a five-year program after transferring from the College of Life Sciences with a one-year repetition). This background gave me hands-on experience with robotics, control, and real engineering systems.
+[ZH] 本科就读于吉林大学**农业机械化及其自动化**专业（2022.09 – 2027.06，五年制；2022 年入学于生命科学学院，大二降转并留级一年）。这段经历让我在机器人、控制系统与工程实践上积累了扎实的动手能力。
 
-[EN] - <a href="/projects/1_craic_lunar/"><strong>🌙 Lunar Exploration Project</strong></a> - Developing autonomous navigation and exploration systems for lunar rover robots
-[ZH] - <a href="/projects/1_craic_lunar/"><strong>🌙 月球探测项目</strong></a> — 为月球探测机器人开发自主导航与探测系统
+## Research Interests
+[EN] - **My own exploration:** audio understanding, audio generation, intelligent speech interaction, and large models.
+[ZH] - **个人探索方向：** 音频理解、音频生成、智能语音交互与大模型。
+[EN] - **Group focus:** multimodal large models, generative recommendation, and graph learning.
+[ZH] - **课题组方向：** 多模态大模型、生成式推荐、图学习。
 
-[EN] - <a href="/projects/2_craic_simuro/"><strong>⚽ Simuro Football Project</strong></a> - Building AI strategies for simulated robot soccer competitions
-[ZH] - <a href="/projects/2_craic_simuro/"><strong>⚽ Simuro 足球项目</strong></a> — 为仿真机器人足球竞赛构建 AI 策略
+## Honors
+[EN] - **National First Prize**, Lunar Exploration Challenge (挑战赛·月球探索赛项), China Robot and Artificial Intelligence Competition (CRAIC), **July 2026**. Team leader, responsible for SLAM and autonomous navigation.
+[ZH] - **全国一等奖**，中国机器人及人工智能大赛 挑战赛·月球探索赛项，**2026 年 7 月**。担任队长，主要负责 SLAM 与自主导航。
 
-[EN] These projects allow me to apply engineering knowledge to solve real-world robotic challenges, from path planning to decision-making algorithms.
-[ZH] 这些项目使我能够将工程知识应用于解决真实世界的机器人挑战，从路径规划到决策算法。
+## Selected Projects
+[EN] - [CRAIC Lunar Exploration · National First Prize](/projects/1_craic_lunar/) — SLAM, autonomous navigation, ROS2
+[ZH] - [CRAIC 月球探索 · 全国一等奖](/projects/1_craic_lunar/) — SLAM、自主导航、ROS2
+[EN] - [CNN Speech Emotion Recognition](https://github.com/xinkaima1/cnn-speech) — course project; log-Mel + PyTorch CNN on RAVDESS
+[ZH] - [CNN 语音情感识别](https://github.com/xinkaima1/cnn-speech) — 课程作业；log-Mel + PyTorch CNN（RAVDESS）
+[EN] - [xArm6 Reaching Simulation](https://github.com/xinkaima1/xarm6-reach-lab) — course project; PyBullet IK + trajectory tracking
+[ZH] - [xArm6 定点到达仿真](https://github.com/xinkaima1/xarm6-reach-lab) — 课程作业；PyBullet 逆运动学 + 轨迹跟踪
 
-## Interests
-[EN] - 🤖 Robotics & Autonomous Systems
-[EN] - 🧠 Artificial Intelligence & Machine Learning
-[EN] - 🚀 Space Exploration Technologies
-[EN] - ⚡ Embedded Systems & Control
-[ZH] - 🤖 机器人与自主系统
-[ZH] - 🧠 人工智能与机器学习
-[ZH] - 🚀 空间探索技术
-[ZH] - ⚡ 嵌入式系统与控制
-
-[EN] Feel free to reach out if you'd like to collaborate or discuss any of these topics!
-[ZH] 欢迎联系我，期待与你合作或探讨这些话题！
+[EN] Feel free to reach out by email if you'd like to collaborate or discuss audio intelligence.
+[ZH] 欢迎通过邮件联系，交流音频智能相关的话题与合作。

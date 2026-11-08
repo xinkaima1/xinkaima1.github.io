@@ -1,39 +1,28 @@
 ---
 layout: page
-title: CRAIC Lunar Exploration
-description: Autonomous lunar rover navigation and exploration system
+title: CRAIC Lunar Exploration · National First Prize
+description: "National First Prize (2026) · SLAM & autonomous navigation"
 img:
 importance: 1
 category: work
 related_publications: false
 ---
 
-## CRAIC Lunar Exploration Project
+## CRAIC Lunar Exploration Challenge — National First Prize (2026)
 
-The **China Robot Artificial Intelligence Competition (CRAIC)** Lunar Exploration project challenges teams to develop autonomous robotic systems capable of navigating and exploring simulated lunar environments.
+In **July 2026**, our team won the **National First Prize** in the **Lunar Exploration Challenge (挑战赛·月球探索赛项)** of the **China Robot and Artificial Intelligence Competition (CRAIC)**.
 
-### Project Overview
+### My Role
 
-This project focuses on building an intelligent lunar rover that can:
-- 🗺️ **Autonomous Navigation** - Path planning and obstacle avoidance in unknown terrain
-- 🔍 **Environment Perception** - Sensor fusion for terrain analysis and feature detection
-- 🎯 **Task Execution** - Complete exploration missions with scientific objectives
-- 🤖 **AI Decision Making** - Real-time adaptive strategies based on environmental feedback
+**Team leader**, responsible for **SLAM and autonomous navigation**: mapping the simulated lunar environment, localizing the rover, and planning and executing its exploration trajectory.
 
-### Technologies
+### Technical Scope
 
-- **Robot Operating System (ROS)** - System integration and communication
-- **SLAM Algorithms** - Simultaneous Localization and Mapping
-- **Computer Vision** - Terrain classification and object detection
-- **Path Planning** - A*, Dijkstra, and heuristic-based algorithms
+- **ROS2** — system integration and inter-module communication
+- **SLAM** — mapping and localization in the competition arena
+- **Autonomous navigation** — trajectory execution and goal reaching
+- **Path planning** — route generation for the exploration task
 
-### Role & Contributions
+### Outcome
 
-As a team member at Jilin University, I contribute to:
-- Autonomous navigation algorithm development
-- Sensor data processing and fusion
-- System integration and testing
-
----
-
-*Part of the CRAIC robotics competition series.*
+National First Prize (national level), July 2026. This project is where I built my foundation in robot autonomy before moving toward audio intelligence.
